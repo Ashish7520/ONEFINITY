@@ -1,0 +1,60 @@
+:root {
+  --light-color: #f8f7ff;
+  --dark-color: #9381ff;
+  --medium-color: #b8b8ff;
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--dark-color);
+}
+
+.task {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--medium-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+.task.completed {
+  background-color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.task-form {
+  margin-top: 20px;
+}
+
+.input {
+  margin-right: 10px;
+  height: 25px;
+  width: 400px;
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: none;
+  margin-left: 30px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
