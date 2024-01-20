@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3001/task",
+  baseURL: "https://onefinity-api-file.vercel.app/task",
 });
 
 export const getAllTasks = async () => {
