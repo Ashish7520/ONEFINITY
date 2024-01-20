@@ -6,7 +6,7 @@ const sequelize = require("./util/database");
 //using cores to prevent the cors related error
 app.use(
   cors({
-    origin: "https://onefinity-frontend.vercel.app",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
