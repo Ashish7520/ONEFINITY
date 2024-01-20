@@ -1,3 +1,5 @@
+//sending the API request to the backend
+
 import axios from "axios";
 
 const api = axios.create({

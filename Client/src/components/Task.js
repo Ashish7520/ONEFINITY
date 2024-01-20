@@ -1,3 +1,5 @@
+//this component take care of how our to do task will show in UI and implements the functionallity of toggling the completion and deleting the task
+
 import React from "react";
 import styles from "../styles.module.css";
 

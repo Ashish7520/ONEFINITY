@@ -1,5 +1,6 @@
 const Task = require("../model/Task");
 
+//to get all the to do task
 const getAllTasks = async (req, res) => {
   try {
     const tasks = await Task.findAll();
@@ -10,6 +11,7 @@ const getAllTasks = async (req, res) => {
   }
 };
 
+//to save the to do task in the database
 const createTask = async (req, res) => {
   const { title } = req.body;
 
@@ -22,6 +24,7 @@ const createTask = async (req, res) => {
   }
 };
 
+//to update the to do task as completed
 const updateTask = async (req, res) => {
   const taskId = req.params.id;
   const { completed } = req.body;
@@ -44,6 +47,7 @@ const updateTask = async (req, res) => {
   }
 };
 
+//to delete the to do task
 const deleteTask = async (req, res) => {
   const taskId = req.params.id;
 
