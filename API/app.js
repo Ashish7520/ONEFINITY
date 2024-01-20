@@ -4,12 +4,7 @@ const app = express();
 const sequelize = require("./util/database");
 
 //using cores to prevent the cors related error
-app.use(
-  cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 //using bodyparser to fetch the body during post request
